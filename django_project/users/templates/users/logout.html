@@ -1,0 +1,9 @@
+{% extends "blog/base.html" %} <!--Inherits template from base.html in the blog application.-->
+{% block content %} <!--Defines this block of content.-->
+    <h2>You have been logged out</h2>
+    <div class="border-top pt-3"> <!--Creates div with bootstrap formatting.-->
+        <small class="text-muted">
+            <a href="{% url 'login' %}">Log In Again</a>
+        </small>
+    </div>
+{% endblock content %} <!--Ends this content block.-->
